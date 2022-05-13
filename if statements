@@ -1,0 +1,14 @@
+weight = input('what is your weight? ')
+unit = input('(L)bs or (K)g: ')
+
+if unit.upper() == 'K':
+    w_convert = int(weight) / .45
+    print(f'You are {w_convert} pounds')
+elif unit.upper() == 'L':
+    w_convert = int(weight) * .45
+    print(f'You are {w_convert} kilos')
+
+#can also put int function in front of input('what is your weight? ')
+#to make the rest of ur code easier
+
+#can also just use else for 2nd part
